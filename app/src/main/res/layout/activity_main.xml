@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#521C99"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/top_arc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@android:style/Widget.Button"
+                android:id="@+id/btn_dang_nhap"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:text="Đăng nhập"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/girl"
+                app:layout_constraintBottom_toTopOf="@+id/btn_dang_nhap"
+                app:layout_constraintEnd_toEndOf="@+id/btn_dang_nhap"
+                app:layout_constraintStart_toStartOf="@+id/btn_dang_nhap" />
+
+            <TextView
+                android:id="@+id/tv_dangky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="32dp"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:text="  Bạn là người dùng mới? Đăng ký  "
+                app:layout_constraintEnd_toEndOf="@+id/btn_dang_nhap"
+                app:layout_constraintStart_toStartOf="@+id/btn_dang_nhap"
+                app:layout_constraintTop_toBottomOf="@+id/btn_dang_nhap" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="96dp"
+                android:textAllCaps="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:text="Chào mừng bạn đến với ứng dụng quản lý chi tiêu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

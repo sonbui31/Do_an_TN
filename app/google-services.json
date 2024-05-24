@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "640137862873",
+    "firebase_url": "https://quanlychitieu-c0b02-default-rtdb.firebaseio.com",
+    "project_id": "quanlychitieu-c0b02",
+    "storage_bucket": "quanlychitieu-c0b02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640137862873:android:a0035d45eb60bdfa5fa8c8",
+        "android_client_info": {
+          "package_name": "com.example.quanlychitieu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDefglHWblTfTICDJWtYi9icZafMuPIk2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
